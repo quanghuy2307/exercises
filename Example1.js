@@ -9,7 +9,7 @@ VD:
 */
 
 Array.prototype.logger = function (title, message) {
-    console.log(String(title) + ': ' + String(message));
+    console.log(`${title}: ${message}`);
 }
 
 const arr1 = [1, 2];
