@@ -40,3 +40,18 @@ const duc = Object.create(personObject, {
             });
 
 duc.sayBye();
+
+/* Cách 3 */
+const personObject1 = {
+    fullName: function() {
+        return this.firstName + ' ' + this.lastName;
+    }
+};
+
+personObject1.prototype.sayBye = function () {
+    console.log('Goodbye!');
+}
+
+const thuyet = Object.create(personObject1);
+
+thuyet.sayBye();
